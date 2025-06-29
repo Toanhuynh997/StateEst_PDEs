@@ -1,7 +1,4 @@
 clear
-% load('RefSol_BDF2_Mixed_PeriDiri_80_8000_opt2_Re2000v1.mat', 'U_Ref',...
-%     'V_Ref', 'P_Ref', 'q_Ref')
-
 load('RefSol_BDF2_Mixed_PeriDiri_80_8000_opt1_Re2000v1.mat', 'U_Ref',...
     'V_Ref', 'P_Ref', 'q_Ref')
 %% Setting
