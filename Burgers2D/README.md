@@ -8,7 +8,7 @@ The implementation of the SSP-RK2 in pytorch are coded in **Burger2D_SSPRK2.py**
 To run the EnSF algorithm with no in-painting (IP) technique, execute the file **EnSF_2DBurger_SSPRK2_NoIP.ipynb**.  
 To run the LETKF algorithm, run the file **LETKF_2DBurger_SSPRK2.ipynb**.  
 The EnSF with bi-harmonic and with Navier-Stokes IP are shown in **EnSF_2DBurger_SSPRK2_WithBiHInpainting.ipynb** and **EnSF_2DBurger_SSPRK2_WithNSInpainting.ipynb**, respectively.  
-All above files are in Jupyter Notebook. Users need to install *torch*, *skimage*, *cv2*, *torch_dct*, *joblib*, *sklearn*, and *cvxpy* in advance.
+- [*] All above files are in Jupyter Notebook. Users need to install *torch*, *skimage*, *cv2*, *torch_dct*, *joblib*, *sklearn*, and *cvxpy* in advance.
 
 [^1]: Shu, C.W.: TVB uniformly high-order schemes for conservation laws. Math. Comp. 49(179), 105-121 (1987).  
 [^2]: Gottlieb, S., Shu, C.-W.: Total variation diminishing Runge-Kutta schemes, Math. Comp. 67 (221), 73-85 (1998).
