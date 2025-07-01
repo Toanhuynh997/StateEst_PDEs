@@ -3,6 +3,8 @@ We introduce a score-based diffusion model framework fo adaptively learning the 
 The data assimilation technique we ultilized in this work in the Ensemble Score Filter[^1] algorithm which is very effective in tracking high-dimensional nonlinear
 dynamical systems. We also consider the scenarios where the observational data is very/extremely sparse, which often undermines the performance of data assimilation. To handle this issue, we incorporate inpaiting techniques[^2][^3][^4] with the EnSF. 
 
+We explore several SPDEs, including 2D Burgers' equations, Allen-Cahn equations, and Navier-Stokes equation. The numerical solver specified for each problem is chosen based on mainly two factors: (1) how straightforward it is to implement in PyTorch and (2) its proven effectiveness with minimal computational cost. Users have the freedom to substitute any of the provided solvers with their own implementations, requiring only minor adjustments to integrate them. Note that in this work, we restrict ourselves to uniform time steps. Extension to adaptive or non-uniform time-stepping will be the subject of future research.
+
 >[!IMPORTANT] 
 >All above files are in Jupyter Notebook. Users need to install *torch*, *skimage*, *cv2*, *torch_dct*, *joblib*, *sklearn*, and *cvxpy* in advance.
 
