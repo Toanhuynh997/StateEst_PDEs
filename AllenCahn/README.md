@@ -1,5 +1,5 @@
 We adopt a linear second-order maximum bound principle-preserving backward differentiation formula (BDF) scheme[^1] as the numerical solver for the Allen-Cahn equation with general mobility. We consider three types of mobility: constant, non-constant (i.e., spatially varying), and state-dependent. The reference solution is generated on a very fine time grid to yield reliable synthetic observational data, while the filtering process is performed on a coarsed one to reduce computational time. 
 
-The numerical experiment is also adopted from [^1]. We note that solution at the terminal time $T$ depends on the initial condition, and since the initial condition is chosen randomly, the users may obtain different reference solutions than the ones in our work and in [^1].
+The numerical experiment is taken from [^1]. Because the solution at terminal time $T$ depends on the randomly chosen initial condition, users may obtain reference solutions that differ from ours and from those in [^1] :dizzy: :dizzy: .
 
 [^1]: D. Hou, L. Ju, AND Z. Qiao, A LINEAR SECOND-ORDER MAXIMUM BOUND PRINCIPLE-PRESERVING BDF SCHEME FOR THE ALLEN-CAHN EQUATION WITH A GENERAL MOBILITY, MATHEMATICS OF COMPUTATION, Volume 92, Number 344, November 2023, Pages 2515–2542, (https://doi.org/10.1090/mcom/3843).
