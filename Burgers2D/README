@@ -3,5 +3,5 @@ It is well-known that for the Burgers' equations (or for the hyperbolic PDEs in 
 
 
 
-[^1] Shu, C.W.: TVB uniformly high-order schemes for conservation laws. Math. Comp. 49(179), 105-121 (1987).  
-[^2] Gottlieb, S., Shu, C.-W.: Total variation diminishing Runge-Kutta schemes, Math. Comp. 67 (221), 73-85 (1998).
+[^1]: Shu, C.W.: TVB uniformly high-order schemes for conservation laws. Math. Comp. 49(179), 105-121 (1987).  
+[^2]: Gottlieb, S., Shu, C.-W.: Total variation diminishing Runge-Kutta schemes, Math. Comp. 67 (221), 73-85 (1998).
