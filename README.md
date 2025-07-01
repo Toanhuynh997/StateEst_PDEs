@@ -6,7 +6,7 @@ dynamical systems. We also consider the scenarios where the observational data i
 We explore several SPDEs, including 2D Burgers' equations, Allen-Cahn equations, and Navier-Stokes equation. The numerical solver specified for each problem is chosen based on mainly two factors: (1) how straightforward it is to implement in PyTorch and (2) its proven effectiveness with minimal computational cost. Users have the freedom to substitute any of the provided solvers with their own implementations, requiring only minor adjustments to integrate them. Note that in this work, we restrict ourselves to uniform time steps. Extension to adaptive or non-uniform time-stepping will be the subject of future research.
 
 >[!IMPORTANT] 
->All above files are in Jupyter Notebook. Users need to install *torch*, *skimage*, *cv2*, *torch_dct*, *joblib*, *sklearn*, and *cvxpy* in advance.
+>All above files, except the ones for the Navier-Stokes equation driven by the external force, are written in pytorch and in Jupyter Notebook. Users need to install *torch*, *skimage*, *cv2*, *torch_dct*, *joblib*, *sklearn*, and *cvxpy* in advance.
 
 [^1]: F. Bao, Z. Zhang, G. Zhang, An ensemble score filter for tracking high-dimensional nonlinear dynamical system, Computer Methods in Applied Mechanics and Engineering, 432, Part B, 117447, 2024. (DOI:10.1016/j.cma.2024.117447)(https://www.sciencedirect.com/science/article/abs/pii/S0045782524007023?via%3Dihub).  
 [^2]: M. Bertalmio, A. Bertozzi, and G. Sapiro, Navier-stokes, fluid dynamics, and image and video inpainting, Proceedings of the 2001 IEEE Computer Society Conference on Computer Vision and Pattern Recognition. CVPR 2001, 1 (2001), pp. I–I.  
