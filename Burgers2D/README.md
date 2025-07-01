@@ -4,7 +4,8 @@ It is well-known that for the Burgers' equations (or for the hyperbolic PDEs in 
 the solutions will eventually develop discontinuities or sharp corner at a certain time T. To handle those discontinuities, we employ SSP-RK schemes[^1][^2]
 to solve the target equations.  
 
-The implementation of the SSP-RK2 in pytorch are coded in **Burger2D_SSPRK2.py**.  
+> [!NOTE]
+>The implementation of the SSP-RK2 in pytorch are coded in **Burger2D_SSPRK2.py**.  
 To run the EnSF algorithm with no in-painting (IP) technique, execute the file **EnSF_2DBurger_SSPRK2_NoIP.ipynb**.  
 To run the LETKF algorithm, run the file **LETKF_2DBurger_SSPRK2.ipynb**.  
 The EnSF with bi-harmonic and with Navier-Stokes IP are shown in **EnSF_2DBurger_SSPRK2_WithBiHInpainting.ipynb** and **EnSF_2DBurger_SSPRK2_WithNSInpainting.ipynb**, respectively.  
