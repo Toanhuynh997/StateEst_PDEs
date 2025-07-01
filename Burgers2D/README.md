@@ -8,9 +8,6 @@ To run the EnSF algorithm with no inpainting (IP) technique, execute the file **
 To run the LETKF algorithm, run the file **LETKF_2DBurger_SSPRK2.ipynb**.  
 The EnSF with bi-harmonic and with Navier-Stokes IP are shown in **EnSF_2DBurger_SSPRK2_WithBiHInpainting.ipynb** and **EnSF_2DBurger_SSPRK2_WithNSInpainting.ipynb**, respectively.
 
->[!IMPORTANT] 
->All above files are in Jupyter Notebook. Users need to install *torch*, *skimage*, *cv2*, *torch_dct*, *joblib*, *sklearn*, and *cvxpy* in advance.
-
 [^1]: Shu, C.W.: TVB uniformly high-order schemes for conservation laws. Math. Comp. 49(179), 105-121 (1987).  
 [^2]: Gottlieb, S., Shu, C.-W.: Total variation diminishing Runge-Kutta schemes, Math. Comp. 67 (221), 73-85 (1998).  
 [^3]: M. Bertalmio, A. Bertozzi, and G. Sapiro, Navier-stokes, fluid dynamics, and image and video inpainting, Proceedings of the 2001 IEEE Computer Society Conference on Computer Vision and Pattern Recognition. CVPR 2001, 1 (2001), pp. I–I.  
