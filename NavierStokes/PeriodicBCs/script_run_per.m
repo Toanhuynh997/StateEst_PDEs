@@ -9,13 +9,22 @@ Nx = 40; Ny = Nx;
 
 Nt = T*600;
 
-%% Run this one to get the perS for the EnSF algorithm
-[U,V,P,q, qq, egy, egy_theta, perS, Xp, Yp] = ...
-    NS_bEuler_per(xa,xb,ya,yb,T,Nx,Ny,Nt,mu,theta,opt);
+%% Run this one to get the perS for the solver with BE
+% [U,V,P,q, qq, egy, egy_theta, perS, Xp, Yp] = ...
+%     NS_bEuler_per(xa,xb,ya,yb,T,Nx,Ny,Nt,mu,theta,opt);
 
-%% Run this one to get the perS for the reference solution
-% [U, V, P, qq, egy, perS, Xp, Yp] =...
-%     NS_BDF_per(xa,xb,ya,yb,T,Nx,Ny,Nt,mu,theta,opt);
+% save('Permutation_Indices_RefSol_Per40.mat', 'perS') 
+
+%% with Nt = 100 for the EnSF algorithm
+% save('Permutation_Indices_EnSF_Per40_T100.mat', 'perS')
+
+%% Run this one to get the perS for the solver with BDF2
+[U, V, P,~, qq, egy, perS, Xp, Yp] =...
+    NS_BDF_per(xa,xb,ya,yb,T,Nx,Ny,Nt,mu,theta,opt);
+
+save('Permutation_Indices_RefSol_BDF2Per40.mat', 'perS')
+
+% save('Permutation_Indices_EnSF_BDF2Per40.mat', 'perS')
 
 U_aug = [U; zeros(1, Ny)];
 V_aug = [V zeros(Nx, 1)];
@@ -34,13 +43,7 @@ shading interp
 figure
 surf(Xp, Yp, P)
 
-%% with Nt = 600 for the reference solution
-% save('Permutation_Indices_RefSol_Per40.mat', 'perS') 
-% save('Permutation_Indices_RefSol_BDF2Per40.mat', 'perS')
 
-%% with Nt = 100 for the EnSF algorithm
-% save('Permutation_Indices_EnSF_Per40_T100.mat', 'perS')
-% save('Permutation_Indices_EnSF_BDF2Per40.mat', 'perS')
 
 
 

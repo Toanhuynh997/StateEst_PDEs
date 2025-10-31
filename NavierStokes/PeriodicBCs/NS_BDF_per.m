@@ -110,7 +110,7 @@ end
 % P = P1+q*P2;
 toc
 
-save BDF2_Taylor_Green.mat egy qq xa xb ya yb T mu theta opt Nx Ny Nt
+% save BDF2_Taylor_Green.mat egy qq xa xb ya yb T mu theta opt Nx Ny Nt
 
 % Compute the error
 [err_Linf_u,err_L2_u] = err(U,@u_exact,Xu,Yu,hx,hy,TT(k+1),mu,opt);
